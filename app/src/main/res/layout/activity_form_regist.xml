@@ -31,16 +31,141 @@
     <LinearLayout
         android:id="@+id/formLogin"
         android:layout_width="match_parent"
-        android:layout_height="800dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/shape"
-        android:padding="32dp"
+        android:paddingHorizontal="32dp"
+        android:paddingVertical="32dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar, \nUntuk melanjutkan"
+            android:textSize="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/black"
+            android:layout_marginBottom="28dp"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingVertical="10dp"
+            android:background="@drawable/border"
+            android:layout_marginBottom="6dp"
+            />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Panggilan"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingStart="12dp"
+            android:background="@drawable/border"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingStart="12dp"
+            android:background="@drawable/border"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kata sandi"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingStart="12dp"
+            android:background="@drawable/border"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ulangi kata sandi"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:paddingStart="12dp"
+            android:background="@drawable/border"
+            android:layout_marginBottom="6dp"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saya bersedia menyetujui aturan dan syarat"
+            android:textColor="@color/grey"
+            android:minHeight="0dp"
+            android:layout_marginBottom="24dp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Buat Akun"
+            android:textSize="16dp"
+            android:textAllCaps="false"
+            android:paddingVertical="10dp"
+            android:backgroundTint="@color/blue400"
+            android:background="@drawable/button"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum punya akun?"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masuk"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:paddingVertical="0dp"
+                android:textAllCaps="false"/>
+        </LinearLayout>
 
 
     </LinearLayout>
