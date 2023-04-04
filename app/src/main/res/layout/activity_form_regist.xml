@@ -20,9 +20,9 @@
         android:layout_height="wrap_content"
         android:text="Folks.id"
         android:textColor="@color/white"
-        android:textSize="36dp"
-        android:layout_marginBottom="24dp"
-        android:fontFamily="sans-serif-medium"
+        android:textSize="48dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintBottom_toTopOf="@+id/formLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,8 +44,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Daftar, \nUntuk melanjutkan"
-            android:textSize="28dp"
-            android:fontFamily="sans-serif-medium"
+            android:textSize="25dp"
+            android:fontFamily="@font/poppins_semibold"
             android:textColor="@color/black"
             android:layout_marginBottom="28dp"/>
 
@@ -101,14 +101,15 @@
             android:text="Kata sandi"
             android:textSize="16sp"
             android:layout_marginBottom="4dp"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingVertical="10dp"
             android:paddingStart="12dp"
             android:background="@drawable/border"
-            android:layout_marginBottom="6dp"/>
+            android:layout_marginBottom="6dp"
+            android:inputType="textPassword"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -123,7 +124,8 @@
             android:paddingVertical="10dp"
             android:paddingStart="12dp"
             android:background="@drawable/border"
-            android:layout_marginBottom="6dp"/>
+            android:layout_marginBottom="6dp"
+            android:inputType="textPassword"/>
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -137,13 +139,15 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Buat Akun"
-            android:textSize="16dp"
-            android:textAllCaps="false"
-            android:paddingVertical="10dp"
-            android:backgroundTint="@color/blue400"
+            android:layout_marginBottom="4dp"
             android:background="@drawable/button"
-            android:layout_marginBottom="4dp"/>
+            android:backgroundTint="@color/blue400"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingVertical="8dp"
+            android:text="Buat Akun"
+            android:textAllCaps="false"
+            android:letterSpacing="0"
+            android:textSize="16dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -157,6 +161,7 @@
                 />
 
             <Button
+                android:id="@+id/loginButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Masuk"
@@ -164,7 +169,9 @@
                 android:minHeight="0dp"
                 android:minWidth="0dp"
                 android:paddingVertical="0dp"
-                android:textAllCaps="false"/>
+                android:textAllCaps="false"
+                android:letterSpacing="0"
+                android:fontFamily="@font/poppins_semibold"/>
         </LinearLayout>
 
 
