@@ -11,9 +11,17 @@ class FormLoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_form_login)
 
         val registButton = findViewById<Button>(R.id.registButton)
+        val masukButton = findViewById<Button>(R.id.masukButton)
+
 
         registButton.setOnClickListener{
             Intent(this, FormRegistActivity::class.java). also{
+                startActivity(it)
+            }
+        }
+
+        masukButton.setOnClickListener{
+            Intent(this, HomeScreenActivity::class.java). also{
                 startActivity(it)
             }
         }
