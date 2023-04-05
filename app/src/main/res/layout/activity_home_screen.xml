@@ -144,7 +144,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView"
         android:orientation="vertical"
-        android:background="@drawable/event_layout">
+        android:background="@drawable/event_layout"
+        android:paddingBottom="24dp">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -158,12 +159,14 @@
             android:textAlignment="center"
             android:paddingVertical="4dp"
             android:textColor="@color/white"
-            android:background="#9c9ca5"/>
+            android:background="#86868d"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="24dp">
+            android:paddingHorizontal="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="24dp">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -185,6 +188,62 @@
                 android:background="@drawable/category3"
                 android:minHeight="0dp"
                 android:layout_marginEnd="8dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gen Z: Peduli dengan \nSekitar, membangun \nlingkungan"
+            android:paddingHorizontal="24dp"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="48dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_date"
+                app:tint="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 Maret 2023"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_location"
+                app:tint="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teluk naga, Banten"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                />
+
         </LinearLayout>
 
 
