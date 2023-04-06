@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailEventActivity">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape2"
+        android:padding="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <ImageView
+            android:id="@+id/backToHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_left_arrow"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="8dp"
+            app:tint="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/event1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        android:orientation="vertical"
+        android:background="@drawable/event_layout"
+        android:paddingBottom="24dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/event_picture"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batas Registrasi 3 Hari Lagi"
+            android:textAlignment="center"
+            android:paddingVertical="4dp"
+            android:textColor="@color/white"
+            android:background="#86868d"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:background="@drawable/category3"
+                android:minHeight="0dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lingkungan"
+                android:textColor="@android:color/holo_green_dark"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:background="@drawable/category3"
+                android:minHeight="0dp"
+                android:layout_marginEnd="8dp" />
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gen Z: Peduli dengan \nSekitar, membangun \nlingkungan"
+                android:paddingHorizontal="16dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_love"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:padding="24dp"
+                app:tint="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/dotted_line"
+            android:layout_marginVertical="8dp"
+            android:paddingHorizontal="16dp"
+            android:layerType="software"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kegiatan ini bertujuan membantu warga lokal sekitar teluk naga untuk membersihkan pesisir pantai supaya dapat menciptakan lingkungan yang lebih bersih dan sehat bagi warga maupun hewani dan nabati di laut."
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="36dp"
+            android:justificationMode="inter_word"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_date"
+                app:tint="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25 Maret 2023"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="8dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_location"
+                app:tint="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="8dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teluk naga, Banten"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/shape3"
+            android:hint="Daftar"
+            android:textColorHint="@color/white"
+            android:textSize="24dp"
+            android:letterSpacing="0"
+            android:layout_marginVertical="6dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/shape4"
+            android:hint="Hubungi penyelenggara"
+            android:textColorHint="@color/white"
+            android:textSize="18dp"
+            android:letterSpacing="0" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
