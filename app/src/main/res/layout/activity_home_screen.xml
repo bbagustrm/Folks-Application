@@ -67,6 +67,7 @@
             />
 
         <ImageButton
+            android:id="@+id/AccountButton"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:src="@drawable/icon_account"

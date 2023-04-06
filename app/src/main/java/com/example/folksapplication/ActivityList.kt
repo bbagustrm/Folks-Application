@@ -12,10 +12,16 @@ class ActivityList : AppCompatActivity() {
 
 
         val homeScreenButton = findViewById<ImageView>(R.id.homeScreenButton)
-
+        val accountButton = findViewById<ImageView>(R.id.AccountButton)
 
         homeScreenButton.setOnClickListener{
             Intent(this, HomeScreenActivity::class.java). also{
+                startActivity(it)
+            }
+        }
+
+        accountButton.setOnClickListener{
+            Intent(this, AccountActivity::class.java). also{
                 startActivity(it)
             }
         }
