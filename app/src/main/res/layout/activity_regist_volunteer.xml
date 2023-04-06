@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistVolunteerActivity"
+    android:background="@color/white">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/formLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:paddingTop="32dp"
+        android:paddingHorizontal="32dp"
+        android:paddingBottom="0dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="48dp">
+
+            <ImageView
+                android:id="@+id/backToDetailVolunteer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_left_arrow"
+                android:layout_gravity="center_vertical"
+                android:layout_marginEnd="24dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendaftaran"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Lengkap"
+                android:paddingStart="16dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/border"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="E-mail"
+                android:paddingVertical="16dp"
+                android:paddingStart="12dp"
+                android:layout_marginVertical="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nomor Telepon"
+                android:paddingStart="16dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/border"
+                android:layout_marginBottom="16dp"
+                android:inputType="number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="Institusi / Lembaga"
+                android:paddingVertical="16dp"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tempat, Tanggal Lahir"
+                android:paddingStart="16dp"
+                android:paddingVertical="16dp"
+                android:background="@drawable/border"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:hint="Link Berkas"
+                android:paddingVertical="16dp"
+                android:paddingStart="12dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/masukButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:backgroundTint="@color/blue400"
+            android:fontFamily="@font/poppins_semibold"
+            android:paddingVertical="5dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:letterSpacing="0"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="48dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingHorizontal="24dp">
+
+            <ImageButton
+                android:id="@+id/homeScreenButton"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_home"
+                android:background="@android:color/transparent"
+                android:paddingVertical="16dp"
+                app:tint="@color/black" />
+
+            <ImageButton
+                android:id="@+id/myActivity"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_menu"
+                android:background="@android:color/transparent"
+                android:paddingVertical="16dp"
+                app:tint="@color/black"
+                />
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_account"
+                android:background="@android:color/transparent"
+                android:paddingVertical="16dp"
+                app:tint="@color/black"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
